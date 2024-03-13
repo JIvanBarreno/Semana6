@@ -1,0 +1,27 @@
+<div class="list-color">
+	<h1 class="tittle-colors">{{title}}</h1>
+	<div class="inputs">
+		<div class="data">
+			<div class="rgb">
+				<label for="red">Rojo:</label>
+				<input type="number" id="red" [formControl]="red">
+			</div>
+			<div class="rgb">
+				<label for="green">Verde:</label>
+				<input type="number" id="green" [formControl]="green">
+			</div>
+            <div class="rgb">
+				<label for="blue">Azul:</label>
+				<input type="number" id="blue" [formControl]="blue">
+			</div>
+		</div>
+	</div>
+	<div class="add-list-button">
+		<div class="buttons">
+			<button id="op-sum" (click)="addColor()">Agregar Color</button>
+		</div>
+		<div class="result">
+			<app-colorlist [dataColors]="colorItem"></app-colorlist>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="calc">
+	<h1 class="tittle-calc">{{title}}</h1>
+	<div class="inputs">
+		<div class="data">
+			<div class="number">
+				<label for="num-1">Ingrese Numero 1:</label>
+				<input type="number" id="num-1" [formControl]="num1">
+			</div>
+			<div class="number">
+				<label for="num-2">Ingrese Numero 2:</label>
+				<input type="number" id="num-2" [formControl]="num2">
+			</div>
+		</div>
+	</div>
+	<div class="operations">
+		<div class="buttons">
+			<button id="op-sum" (click)="sumar()">Suma</button>
+			<button id="op-res" (click)="restar()">Resta</button>
+			<button id="op-mul" (click)="dividir()">Division</button>
+			<button id="op-div" (click)="multiplicar()">Multiplicacion</button>
+			<button id="op-pot" (click)="potencia()">Potencia</button>
+		</div>
+		<div class="result">
+			<p>{{resultOperation}}</p>
+		</div>
+	</div>
+</div>

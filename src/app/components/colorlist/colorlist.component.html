@@ -1,0 +1,7 @@
+<ul class="color-list">
+    @for (valor of dataColors; track valor.hex) {
+        <div class="color-item" style="background-color: rgb({{valor.red}}, {{valor.green}}, {{valor.blue}});">{{valor.hex}}</div>
+    } @empty {
+        <div class="color-item"> Sin Color </div>
+    }
+</ul>
